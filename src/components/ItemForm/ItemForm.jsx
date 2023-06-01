@@ -2,7 +2,7 @@ import { useState } from "react"
 
 function ItemForm(){
 
-    const [item, setItem] = useState('')
+    const [name, setName] = useState('')
     const [quantity, setQuantity] = useState('')
     const [unit, setUnit] = useState('')
 
@@ -10,8 +10,7 @@ function ItemForm(){
         <>
         <h2> ADD AN ITEM</h2>
         <form>
-        <label> Item:</label> <input />
-
+        <label>Item:</label> <input />
         <label>Quantity:</label> <input /> 
         <label>Unit:</label> <input />
         <button>Save</button>
