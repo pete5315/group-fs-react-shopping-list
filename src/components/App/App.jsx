@@ -1,9 +1,8 @@
 import React from 'react';
-
 import Header from '../Header/Header.jsx'
 import './App.css';
 import ShoppingList from '../ShoppingList/shoppingList.jsx';
-
+import ItemForm from '../ItemForm/ItemForm.jsx';
 
 function App() {
     return (
@@ -13,6 +12,7 @@ function App() {
             <main>
                 <ShoppingList/>
                 <p>Under Construction...</p>
+                <ItemForm />
             </main>
         </div>
     );
