@@ -1,3 +1,4 @@
+
     import React from 'react';
     import axios from 'axios';
     import Header from '../Header/Header.jsx'
@@ -13,6 +14,9 @@
 
     let [list, setList] = useState([]);
 
+  useEffect(() => {
+    getList()
+  }, [])
 
 
     const getList = () => {
