@@ -35,13 +35,16 @@ function App() {
             <main>
 
             
-                <Item/>
-      
-                <ShoppingList getList={getList} />
-
-                <p>Under Construction...</p>
+                    <p>Under Construction...</p>
 
                 <ItemForm />
+      
+                <ShoppingList getList={getList} />
+                
+                <Item/>
+            
+
+               
             </main>
         </div>
     );
