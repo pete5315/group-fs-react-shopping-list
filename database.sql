@@ -4,7 +4,8 @@ CREATE TABLE list (
     "id" SERIAL PRIMARY KEY,
     "name" VARCHAR(80) NOT NULL,
     "quantity" NUMERIC DEFAULT 1,
-    "unit" VARCHAR(20) NOT NULL
+    "unit" VARCHAR(20) NOT NULL,
+    "purchased" BOOLEAN DEFAULT FALSE
 );
 
 INSERT INTO list ("name", "quantity", "unit")
