@@ -4,7 +4,7 @@ import axios from axios;
 import Header from '../Header/Header.jsx'
 import './App.css';
 import ShoppingList from '../ShoppingList/shoppingList.jsx';
-
+import ItemForm from '../ItemForm/ItemForm.jsx';
 
 function App() {
 
@@ -34,6 +34,7 @@ function App() {
             <main>
                 <ShoppingList getList={getList} />
                 <p>Under Construction...</p>
+                <ItemForm />
             </main>
         </div>
     );
