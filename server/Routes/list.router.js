@@ -51,5 +51,20 @@ router.put('/:id', (req, res) => {
   })
 })
 
+router.post('/', (req,res) => {
+    const item = req.body
+    console.log(item)
+    const sqlText = ` INSERT INTO list ("name","quantity","unit")
+    VALUES ($1,$2,$3)`;
+    pool.query(sqlText,[item.name,item.quantity,item.unit])
+    .then(result => {
+        console.log('add an item to our database',item)
+        res.sendStatus(201)
+    }).catch(err => {
+        console.log('Error sending to server',err)
+        res.sendStatus(500)
+    })
+})
+
 
 module.exports = router;
