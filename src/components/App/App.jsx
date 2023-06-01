@@ -5,13 +5,16 @@ import './App.css';
 import Item from '../Item/Item.jsx';
 import ShoppingList from '../ShoppingList/shoppingList.jsx';
 import ItemForm from '../ItemForm/ItemForm.jsx';
-import {useState} from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
 
 
   let [list, setList] = useState([]);
 
+  useEffect(() => {
+    getList()
+  }, [])
 
 
   const getList = () => {
