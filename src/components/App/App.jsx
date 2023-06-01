@@ -6,7 +6,7 @@
     import ShoppingList from '../ShoppingList/shoppingList.jsx';
     import ItemForm from '../ItemForm/ItemForm.jsx';
     import {useState} from 'react';
-    import pool from '../../../server/modules/pool.js';
+    // import pool from '../../../server/modules/pool.js';
 
     function App() {
 

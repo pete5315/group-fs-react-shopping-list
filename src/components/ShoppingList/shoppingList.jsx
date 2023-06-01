@@ -1,3 +1,4 @@
+import './ShoppingList.css';
 
 function ShoppingList() {
 
@@ -11,8 +12,8 @@ function ShoppingList() {
     return (
         <>
         <h2>Shopping List</h2>
-        <button>Reset</button>
-        <button>Clear</button>
+        <button className="button">Reset</button>
+        <button className="button">Clear</button>
         </>
     )
     
