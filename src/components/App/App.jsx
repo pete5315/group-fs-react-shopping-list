@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Header from '../Header/Header.jsx'
 import './App.css';
-import Item from '../Item/Item.jsx';
+import Item from '../Item/Item.jsx'
 import ShoppingList from '../ShoppingList/shoppingList.jsx';
 import ItemForm from '../ItemForm/ItemForm.jsx';
 import {useState} from 'react';
@@ -10,7 +10,7 @@ import {useState} from 'react';
 function App() {
 
 
-  let [list, setList] = useState([]);
+  const [list, setList] = useState([]);
 
 
 
@@ -39,9 +39,9 @@ function App() {
 
                 <ItemForm />
       
-                <ShoppingList getList={getList} />
+                <ShoppingList getList={getList} list={list}/>
+                <Item list={list}/> 
                 
-                <Item/>
             
 
                
