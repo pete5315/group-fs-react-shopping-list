@@ -17,7 +17,7 @@ console.log(list)
         <button>Reset</button>
         <button>Clear</button>
         {list.map(item => (
-            <Item key={item.id} item={item} getList={getList}/>
+            <Item key={item.id} id={item.id} name={item.name} quantity={item.quantity} unit={item.unit} getList={getList}/>
         ))}
         </>
     )

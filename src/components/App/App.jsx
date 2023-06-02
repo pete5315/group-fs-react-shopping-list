@@ -3,11 +3,11 @@
     import axios from 'axios';
     import Header from '../Header/Header.jsx'
     import './App.css';
-    import Item from '../Item/Item.jsx';
+    // import Item from '../Item/Item.jsx';
     import ShoppingList from '../ShoppingList/shoppingList.jsx';
     import ItemForm from '../ItemForm/ItemForm.jsx';
-    import {useState} from 'react';
-    import pool from '../../../server/modules/pool.js';
+    import {useState,useEffect} from 'react';
+    
 
     function App() {
 
@@ -62,9 +62,9 @@
 
                     <ItemForm />
         
-                    <ShoppingList getList={getList} />
+                    <ShoppingList getList={getList} list={list} />
                     
-                    <Item/>
+                    {/* <Item/> */}
                 
 
                 

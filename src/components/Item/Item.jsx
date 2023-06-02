@@ -1,8 +1,8 @@
     import axios from 'axios'
     
-    function Item({id,name,quantity,getList}) {
+    function Item({id,name,quantity,unit,getList}) {
 
-       const handleDelete = (id) => {
+       const handleDelete = () => {
             console.log('Deleted')
             console.log(id)
             
@@ -20,9 +20,9 @@
 
             <div>
                 <h4>{name}</h4>
-                <p>{quantity}</p>
+                <p>{quantity}</p> <p>{unit}</p>
                 <button>Buy</button>
-                <button onClick={() => {handleDelete(id)}} >Remove</button>
+                <button onClick={() => {handleDelete()}} >Remove</button>
             
           
            
