@@ -7,6 +7,7 @@ import ShoppingList from '../ShoppingList/shoppingList.jsx';
 import ItemForm from '../ItemForm/ItemForm.jsx';
 import {useState} from 'react';
 
+
 function App() {
 
 
@@ -40,7 +41,7 @@ function App() {
                 <ItemForm />
       
                 <ShoppingList getList={getList} list={list}/>
-                <Item list={list}/> 
+                <Item getList={getList}/> 
                 
             
 

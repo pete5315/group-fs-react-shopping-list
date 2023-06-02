@@ -2,12 +2,12 @@ import Item from '../Item/Item.jsx';
 
 
 
-function ShoppingList({list}) {
+function ShoppingList({list,getList}) {
 
 
 
 
-
+console.log(list)
 
 
 
@@ -17,7 +17,7 @@ function ShoppingList({list}) {
         <button>Reset</button>
         <button>Clear</button>
         {list.map(item => (
-            <Item key={item.id} item={item}/>
+            <Item key={item.id} item={item} getList={getList}/>
         ))}
         </>
     )
