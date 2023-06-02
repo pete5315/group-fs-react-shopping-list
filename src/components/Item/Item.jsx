@@ -1,33 +1,33 @@
-    function Item() {
+    import axios from 'axios'
+    
+    function Item({id,name,quantity,unit,getList}) {
+
+       const handleDelete = () => {
+            console.log('Deleted')
+            console.log(id)
+            
+            axios.delete(`/list/${id}`)
+            .then(response => {
+                getList()
+                
+            }).catch(err => {
+                console.log('Error with delete on Item', err)
+            })
+        }
 
         return (
             <>
+
             <div>
-                <h4>Apples</h4>
-                <p>5 lbs</p>
+                <h4>{name}</h4>
+                <p>{quantity}</p> <p>{unit}</p>
                 <button>Buy</button>
-                <button>Remove</button>
+                <button onClick={() => {handleDelete()}} >Remove</button>
             
           
-            <h4>Bread</h4>
-            <p>5 loof</p>
-            <button>Buy</button>
-            <button>Remove</button>
-       
-            <h4>Milk</h4>
-            <p> 1 galloon</p>
-            <button>Buy</button>
-            <button>Remove</button>
-        
-            <h4>Sliced Almonds</h4>
-            <p>2 cups</p>
-            <button>Buy</button>
-            <button>Remove</button>
-       
-            <h4>Bananas</h4>
-            <p> 1 bunch</p>
-            <button>Buy</button>
-            <button>Remove</button>
+           
+            
+          
         </div>
         </>
         )
