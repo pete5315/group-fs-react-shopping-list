@@ -1,4 +1,17 @@
-    function Item() {
+import {useState} from "react"
+
+function Item() {
+
+const [selected, setSelected] = useState(false)
+
+const handlePurchased = () => {
+    console.log('You want to purchase this item');
+}
+
+
+
+
+
 
         return (
             <>

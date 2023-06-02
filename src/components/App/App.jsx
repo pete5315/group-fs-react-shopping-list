@@ -6,7 +6,7 @@
     import Item from '../Item/Item.jsx';
     import ShoppingList from '../ShoppingList/shoppingList.jsx';
     import ItemForm from '../ItemForm/ItemForm.jsx';
-    import {useState} from 'react';
+    import {useState, useEffect} from 'react';
     // import pool from '../../../server/modules/pool.js';
 
     function App() {
@@ -22,7 +22,7 @@
     const getList = () => {
         axios.get('/list')
         .then(response => {
-            setList(response.data)
+        setList(response.data)
         })
         .catch(err => {
             alert('error getting list');
