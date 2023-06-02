@@ -7,7 +7,7 @@
     import ShoppingList from '../ShoppingList/shoppingList.jsx';
     import ItemForm from '../ItemForm/ItemForm.jsx';
     import {useState, useEffect} from 'react';
-    // import pool from '../../../server/modules/pool.js';
+
 
     function App() {
 
@@ -62,9 +62,9 @@
 
                     <ItemForm />
         
-                    <ShoppingList getList={getList} />
+                    <ShoppingList getList={getList} list={list} />
                     
-                    <Item/>
+                    {/* <Item/> */}
                 
 
                 
