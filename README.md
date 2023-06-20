@@ -1,3 +1,5 @@
+Group project to practice group dynamics utilizing recently learned React skills.
+
 # React Shopping List
 
 [Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
